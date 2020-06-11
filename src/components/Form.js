@@ -101,6 +101,7 @@ export default function Form() {
         <input
           type='text'
           name='name'
+          data-cy="name"
           value={formState.name}
           onChange={inputChange}
         />
@@ -111,6 +112,7 @@ export default function Form() {
         <input
           type='text'
           name='email'
+          data-cy="email"
           value={formState.email}
           onChange={inputChange}
         />
@@ -122,6 +124,7 @@ export default function Form() {
         Why would you like to help?
         <textarea
           name='motivation'
+          data-cy="motivation"
           value={formState.motivation}
           onChange={inputChange}
         />
@@ -142,6 +145,7 @@ export default function Form() {
         <input
           type='checkbox'
           name='terms'
+          data-cy="submit"
           checked={formState.terms}
           onChange={inputChange}
         />
