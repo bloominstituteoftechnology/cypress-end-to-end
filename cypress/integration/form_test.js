@@ -13,3 +13,8 @@ describe("Form - testing our form inputs", function () {
         cy.get("#positions").select("Yard Work").should("have.value", "Yard Work");
         cy.get('[type="checkbox"]').check().should("be.checked");
         cy.get("[data-cy=submit]").click();
+    });
+    it("adds text to textarea", () => {
+        cy.get("textarea").type("hey");
+    });
+});
