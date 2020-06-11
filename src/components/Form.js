@@ -145,6 +145,7 @@ export default function Form() {
         <input
           type='checkbox'
           name='terms'
+          data-cy="submit"
           checked={formState.terms}
           onChange={inputChange}
         />

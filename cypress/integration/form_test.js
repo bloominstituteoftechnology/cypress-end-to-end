@@ -12,3 +12,4 @@ describe("Form - testing our form inputs", function () {
             .should("have.value", "I want to help");
         cy.get("#positions").select("Yard Work").should("have.value", "Yard Work");
         cy.get('[type="checkbox"]').check().should("be.checked");
+        cy.get("[data-cy=submit]").click();
