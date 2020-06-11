@@ -101,6 +101,7 @@ export default function Form() {
         <input
           type='text'
           name='name'
+          data-cy="name"
           value={formState.name}
           onChange={inputChange}
         />
@@ -111,6 +112,7 @@ export default function Form() {
         <input
           type='text'
           name='email'
+          data-cy="email"
           value={formState.email}
           onChange={inputChange}
         />
