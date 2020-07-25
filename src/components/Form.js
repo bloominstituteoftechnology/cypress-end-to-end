@@ -101,6 +101,7 @@ export default function Form() {
         <input
           type='text'
           name='name'
+          data-cy="name"
           value={formState.name}
           onChange={inputChange}
         />
@@ -111,6 +112,7 @@ export default function Form() {
         <input
           type='text'
           name='email'
+          data-cy="email"
           value={formState.email}
           onChange={inputChange}
         />
@@ -122,6 +124,7 @@ export default function Form() {
         Why would you like to help?
         <textarea
           name='motivation'
+          data-cy="motivation"
           value={formState.motivation}
           onChange={inputChange}
         />
@@ -149,7 +152,7 @@ export default function Form() {
       </label>
       {/* displaying our post request data */}
       <pre>{JSON.stringify(post, null, 2)}</pre>
-      <button disabled={buttonDisabled}>Submit</button>
+      <button data-cy="submit" disabled={buttonDisabled}>Submit</button>
     </form>
   );
 }
